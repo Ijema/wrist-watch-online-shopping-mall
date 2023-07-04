@@ -187,17 +187,17 @@ section .about{
 
 .about h2{
   text-align: center;
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 .about .row > p{
   text-align: left;
-  margin: 0px 40px;
+  margin: 0px 70px;
   font-size: 18px;
 }
 
 .about h3{
-  margin: 40px 0px 10px 40px;
+  margin: 40px 0px 10px 70px;
   color: #fff;
   font-size: 21px;
 }
@@ -234,7 +234,7 @@ section .about{
 }
 
 .about .team ul{
-  padding-left: 20px;
+  padding-left: 50px;
 }
 
 .about .row{
@@ -246,7 +246,7 @@ section .about{
   margin: 60px 0 90px;
   display: flex;
   max-width: 1200px;
-  width: 70%;
+  width: 87%;
   /* align-items:flex-end; */
   justify-content: space-around;
   color: white;
@@ -354,6 +354,11 @@ footer div{
     background: #333;
     transition: left 0.3s ease;
   }
+
+  .header #menu-toggler:checked~.all-links{
+    left:0;
+  }
+  /* .header .all-links */
   
 }
 
