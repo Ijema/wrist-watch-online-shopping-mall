@@ -12,7 +12,7 @@ html{
 }
 
 body{
-  background: #0e0a0a;;
+  background: #0e0a0a;
 }
 
 .header{
@@ -21,8 +21,6 @@ body{
   height: 120px;
   display: flex;
   justify-content: space-between;
-  top: 0px;
-  left: 0px;
   padding: 25px 40px;
   z-index: 5;
   background: #333;
@@ -330,7 +328,7 @@ footer span{
 footer a{
   padding: 0;
   text-decoration: none;
-  color: #DDC3A5;
+  color: #fff;
   margin-left: 20px;
   font-size: 18px;
 }
@@ -344,22 +342,70 @@ footer div{
 }
 
 @media screen and (max-width: 860px){
-  .header .all-links{
+  .header .navbar{
     position: fixed;
     left: -100%;
     width: 300px;
-    display: block;
     height: 100vh;
-    top: 75px;
+    top: 120px;
     background: #333;
     transition: left 0.3s ease;
   }
 
-  .header #menu-toggler:checked~.all-links{
+  .header #menu-toggler:checked~.navbar{
     left:0;
   }
-  /* .header .all-links */
+  .header .navbar li{
+    font-size: 18px;
+    padding-top: 15px;
+    padding-left: 20px;
+  }
+
+  .header #hamburger-btn{
+    display: block;
+  }
   
+  .navbar .all-links{
+    display: block;
+  }
+
+  section > p{
+    text-align: center;
+  }
+  
+  section .cards .card{
+    width: calc(100% /2 - 15px);
+    margin-bottom: 30px;
+  }
+
+
+  .homepage .content h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .homepage .content .text{
+    font-size: 17px;
+  }
+
+  .content a{
+    font-size: 17px;
+    padding: 9px 20px;
+  }
+
+  .contact .row{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact .row .col:last-child{
+    margin-top: 40px;
+  }
+
+  footer a{
+    height: 0;
+  }
 }
 
 @media screen and (max-width: 560px) {
